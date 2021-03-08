@@ -15,7 +15,7 @@ app.get("/api/scrapping/tiempo", async (req, res) => {
 });
 
 app.use("/", async (req, res) => {
-  res.json("Api ...");
+  res.send('<h1>api</h1>')
 });
 
 const port = process.env.PORT || 8080;
