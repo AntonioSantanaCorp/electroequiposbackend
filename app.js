@@ -36,6 +36,10 @@ app.get("/api/scrapping/tiempo", async (req, res) => {
   res.json(await scrapping.Tiempo());
 });
 
+app.use("/", async (req, res) => {
+  res.json("Api ...");
+});
+
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => console.log("Server running", port));
