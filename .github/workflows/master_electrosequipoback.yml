@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'electrosequipoback'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_7dc2504906244ee0832bf2a08a8d859e }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8c22097b78dc440fb2edc4a29b6af0f1 }}
         package: .
