@@ -14,7 +14,7 @@ app.get("/api/scrapping/tiempo", async (req, res) => {
   res.json(await scrapping.Tiempo());
 });
 
-app.use("/", async (req, res) => {
+app.use(async (req, res) => {
   res.send('<h1>api</h1>')
 });
 
