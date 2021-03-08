@@ -11,11 +11,11 @@ app.use(cors());
 
 //api/scrapping/tiempo
 app.get("/api/scrapping/tiempo", async (req, res) => {
-  res.json(await scrapping.Tiempo());
+  res.status(200).json(await scrapping.Tiempo());
 });
 
 app.use(async (req, res) => {
-  res.send('<h1>api</h1>')
+  res.status(200).send("<h1>api</h1>");
 });
 
 const port = process.env.PORT || 8080;
